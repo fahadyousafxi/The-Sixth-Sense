@@ -61,13 +61,14 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
+  flutter_native_splash: ^2.2.15
 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_launcher_icons: 0.9.3
-  flutter_native_splash: 2.2.11
+#  flutter_native_splash: 2.2.11
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
