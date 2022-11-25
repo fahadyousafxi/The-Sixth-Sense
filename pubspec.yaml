@@ -52,7 +52,6 @@ dependencies:
   # GOOGLE MAPS
   google_maps_flutter: 2.2.1
   map_launcher: 2.4.0
-  change_app_package_name: ^1.1.0
   google_maps_place_picker_mb:
     git:
       url: https://github.com/SmarterVision/google_maps_place_picker_mb.git
