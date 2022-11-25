@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "666623301986",
+    "project_id": "the-sixth-sense-e8ebf",
+    "storage_bucket": "the-sixth-sense-e8ebf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666623301986:android:ceff86581477c1c87bb43b",
+        "android_client_info": {
+          "package_name": "com.thesixthsense.www"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "666623301986-36hnoeaaf0f89te51rso18s3clt2udib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLkvUphZVW7SZn72q1a-mZQ_hnDOLQXvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "666623301986-36hnoeaaf0f89te51rso18s3clt2udib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
