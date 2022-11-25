@@ -40,6 +40,8 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
+
+
 android {
     compileSdkVersion 33
 
@@ -97,6 +99,7 @@ dependencies {
     implementation 'com.android.support:multidex:1.0.3'
     implementation 'com.google.firebase:firebase-messaging:23.0.0'
     implementation "androidx.browser:browser:1.4.0"
+    implementation 'com.google.android.material:material:<version>'
 }
 
 apply plugin: 'com.google.gms.google-services'
