@@ -1,7 +1,8 @@
 /*
  * File name: search_view.dart
- * Last modified: 2022.02.10 at 15:02:14
- * Author: SmarterVision - https://codecanyon.net/user/smartervision
+ * Last modified: 2022.12.12
+ * Author: Ditlou tsa Molongoana
+ * App Name: The sixth sense
  * Copyright (c) 2022
  */
 
@@ -69,7 +70,7 @@ class SearchView extends GetView<SearchController> {
                   },
                   autofocus: true,
                   cursorColor: Get.theme.focusColor,
-                  decoration: Ui.getInputDecoration(hintText: "Search for salon service...".tr),
+                  decoration: Ui.getInputDecoration(hintText: "Search for Healer service...".tr),
                 ),
               ),
             ),

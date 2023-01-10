@@ -1,7 +1,8 @@
 /*
  * File name: booking_model.dart
- * Last modified: 2022.03.11 at 23:34:48
- * Author: SmarterVision - https://codecanyon.net/user/smartervision
+ * Last modified: 2022.12.12
+ * Author: Ditlou tsa Molongoana
+ * App Name: The sixth sense
  * Copyright (c) 2022
  */
 

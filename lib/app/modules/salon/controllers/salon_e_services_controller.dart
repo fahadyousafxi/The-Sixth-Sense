@@ -1,7 +1,8 @@
 /*
  * File name: salon_e_services_controller.dart
- * Last modified: 2022.02.11 at 18:41:33
- * Author: SmarterVision - https://codecanyon.net/user/smartervision
+ * Last modified: 2022.12.12
+ * Author: Ditlou tsa Molongoana
+ * App Name: The sixth sense
  * Copyright (c) 2022
  */
 

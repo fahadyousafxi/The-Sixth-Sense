@@ -1,7 +1,8 @@
 /*
  * File name: booking_address_chip_widget.dart
- * Last modified: 2022.02.25 at 18:14:28
- * Author: SmarterVision - https://codecanyon.net/user/smartervision
+ * Last modified: 2022.12.12
+ * Author: Ditlou tsa Molongoana
+ * App Name: The sixth sense
  * Copyright (c) 2022
  */
 
@@ -34,7 +35,7 @@ class BookingAddressChipWidget extends StatelessWidget {
               margin: EdgeInsetsDirectional.only(end: 5),
               padding: EdgeInsets.symmetric(horizontal: 5, vertical: 0.5),
               child: Text(
-                _booking.atSalon ? "At Salon".tr : (_booking.address.description == '' ? "My Address".tr : _booking.address.description),
+                _booking.atSalon ? "At Healer".tr : (_booking.address.description == '' ? "My Address".tr : _booking.address.description),
                 style: Get.textTheme.bodyText1,
               ),
               decoration: Ui.getBoxDecoration(color: Get.theme.focusColor.withOpacity(0.4)),

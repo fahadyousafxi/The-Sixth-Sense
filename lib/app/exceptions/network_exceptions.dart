@@ -1,7 +1,8 @@
 /*
  * File name: network_exceptions.dart
- * Last modified: 2022.08.14 at 16:24:55
- * Author: SmarterVision - https://codecanyon.net/user/smartervision
+ * Last modified: 2022.12.12
+ * Author: Ditlou tsa Molongoana
+ * App Name: The sixth sense
  * Copyright (c) 2022
  */
 

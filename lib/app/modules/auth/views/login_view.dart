@@ -64,7 +64,7 @@ class LoginView extends GetView<AuthController> {
                           ),
                           SizedBox(height: 5),
                           Text(
-                            "Welcome to the best multi salons system!".tr,
+                            "Welcome to the Sixth Sense App".tr,
                             style: Get.textTheme.caption.merge(TextStyle(color: Get.theme.primaryColor)),
                             textAlign: TextAlign.center,
                           ),

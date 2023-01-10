@@ -3,13 +3,13 @@ import 'package:get/get.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import '../controllers/privacy_controller.dart';
 
-class PrivacyView extends GetView<PrivacyController> {
+class TermsAndCondition extends GetView<PrivacyController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
           title: Text(
-            "Privacy Policy".tr,
+            "Terms And Condition".tr,
             style: Get.textTheme.headline6,
           ),
           centerTitle: true,
@@ -24,10 +24,9 @@ class PrivacyView extends GetView<PrivacyController> {
         body: RefreshIndicator(
           onRefresh: () async {},
           child: WebView(
-              // initialUrl: "${Get.find<GlobalService>().baseUrl}privacy/index.html",
-              initialUrl: "https://docs.google.com/document/d/18VYeEEGcTpcSWyrtM4nQng8J44K8jG9Hh1CTr7uAI-8/edit?usp=sharing",
-              // https://docs.google.com/document/d/1rhpu8_fYsJ-0TQsXHFFzsjOJn6OkYpwF-XT7_JFzCD4/edit?usp=sharing
-              // javascriptMode: JavascriptMode.unrestricted
+            // initialUrl: "${Get.find<GlobalService>().baseUrl}privacy/index.html",
+            initialUrl: "https://docs.google.com/document/d/1rhpu8_fYsJ-0TQsXHFFzsjOJn6OkYpwF-XT7_JFzCD4/edit?usp=sharing",
+            // javascriptMode: JavascriptMode.unrestricted
           ),
         ));
   }

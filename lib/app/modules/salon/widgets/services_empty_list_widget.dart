@@ -1,7 +1,8 @@
 /*
  * File name: services_empty_list_widget.dart
- * Last modified: 2022.05.25 at 15:07:31
- * Author: SmarterVision - https://codecanyon.net/user/smartervision
+ * Last modified: 2022.12.12
+ * Author: Ditlou tsa Molongoana
+ * App Name: The sixth sense
  * Copyright (c) 2022
  */
 

@@ -1,7 +1,8 @@
 /*
  * File name: booking_view.dart
- * Last modified: 2022.05.19 at 12:10:11
- * Author: SmarterVision - https://codecanyon.net/user/smartervision
+ * Last modified: 2022.12.12
+ * Author: Ditlou tsa Molongoana
+ * App Name: The sixth sense
  * Copyright (c) 2022
  */
 
@@ -335,7 +336,7 @@ class BookingView extends GetView<BookingController> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Contact Salon".tr, style: Get.textTheme.subtitle2),
+                Text("Contact healer".tr, style: Get.textTheme.subtitle2),
                 Text(_booking.salon?.phoneNumber ?? '', style: Get.textTheme.caption),
               ],
             ),

@@ -1,7 +1,8 @@
 /*
  * File name: main_drawer_widget.dart
- * Last modified: 2022.02.11 at 02:22:41
- * Author: SmarterVision - https://codecanyon.net/user/smartervision
+ * Last modified: 2022.12.12
+ * Author: Ditlou tsa Molongoana
+ * App Name: The sixth sense
  * Copyright (c) 2022
  */
 
@@ -13,6 +14,7 @@ import '../../routes/app_routes.dart';
 import '../../services/auth_service.dart';
 import '../../services/settings_service.dart';
 import '../custom_pages/views/custom_page_drawer_link_widget.dart';
+import '../help_privacy/views/privacy_view.dart';
 import '../root/controllers/root_controller.dart' show RootController;
 import 'drawer_link_widget.dart';
 
@@ -152,7 +154,7 @@ class MainDrawerWidget extends StatelessWidget {
           ),
           DrawerLinkWidget(
             icon: Icons.place_outlined,
-            text: "Explore Salons",
+            text: "Explore Healers",
             onTap: (e) {
               Get.offAndToNamed(Routes.MAPS);
             },

@@ -1,7 +1,8 @@
 /*
  * File name: coupon_model.dart
- * Last modified: 2022.02.12 at 00:59:13
- * Author: SmarterVision - https://codecanyon.net/user/smartervision
+ * Last modified: 2022.12.12
+ * Author: Ditlou tsa Molongoana
+ * App Name: The sixth sense
  * Copyright (c) 2022
  */
 

@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -10,6 +11,8 @@ import '../../global_widgets/block_button_widget.dart';
 import '../../global_widgets/circular_loading_widget.dart';
 import '../../global_widgets/phone_field_widget.dart';
 import '../../global_widgets/text_field_widget.dart';
+import '../../help_privacy/views/privacy_view.dart';
+import '../../help_privacy/views/terms_and_condition.dart';
 import '../../root/controllers/root_controller.dart';
 import '../controllers/auth_controller.dart';
 
@@ -65,7 +68,7 @@ class RegisterView extends GetView<AuthController> {
                           ),
                           SizedBox(height: 5),
                           Text(
-                            "Welcome to the best multi salons system!".tr,
+                            "Welcome to the Sixth Sense App".tr,
                             style: Get.textTheme.caption.merge(TextStyle(color: Get.theme.primaryColor)),
                             textAlign: TextAlign.center,
                           ),
@@ -160,31 +163,63 @@ class RegisterView extends GetView<AuthController> {
         bottomNavigationBar: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Wrap(
-              crossAxisAlignment: WrapCrossAlignment.center,
-              direction: Axis.vertical,
-              children: [
-                SizedBox(
-                  width: Get.width,
-                  child: BlockButtonWidget(
-                    onPressed: () {
-                      controller.register();
-                      //Get.offAllNamed(Routes.PHONE_VERIFICATION);
-                    },
-                    color: Get.theme.colorScheme.secondary,
-                    text: Text(
-                      "Register".tr,
-                      style: Get.textTheme.headline6.merge(TextStyle(color: Get.theme.primaryColor)),
+            SingleChildScrollView(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                // crossAxisAlignment: WrapCrossAlignment.center,
+                // direction: Axis.vertical,
+                children: [
+                  SizedBox(
+                    width: Get.width,
+                    child: BlockButtonWidget(
+                      onPressed: () {
+                        controller.register();
+                        //Get.offAllNamed(Routes.PHONE_VERIFICATION);
+                      },
+                      color: Get.theme.colorScheme.secondary,
+                      text: Text(
+                        "Register".tr,
+                        style: Get.textTheme.headline6.merge(TextStyle(color: Get.theme.primaryColor)),
+                      ),
+                    ).paddingOnly(top: 15, bottom: 5, right: 20, left: 20),
+                  ),
+                  SizedBox(
+                    width: 333,
+                    height: 32,
+                    child: RichText(
+                      text: TextSpan(
+                        style: Get.textTheme.bodyMedium,
+                        children: <TextSpan>[
+                          TextSpan(text: 'By clicking Register, you agree to our '),
+                          TextSpan(
+                              text: 'Terms of Service',
+                              style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
+                              recognizer: TapGestureRecognizer()
+                                ..onTap = () {
+                                  Navigator.push(context, MaterialPageRoute(builder: (context) => TermsAndCondition()));
+                                }),
+                          TextSpan(text: ' and that you have read our '),
+                          TextSpan(
+                              text: 'Privacy Policy',
+                              style: TextStyle(color: Colors.blue,  fontWeight: FontWeight.bold),
+                              recognizer: TapGestureRecognizer()
+                                ..onTap = () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => PrivacyView()));
+                                }),
+                        ],
+                      ),
                     ),
-                  ).paddingOnly(top: 15, bottom: 5, right: 20, left: 20),
-                ),
-                TextButton(
-                  onPressed: () {
-                    Get.toNamed(Routes.LOGIN);
-                  },
-                  child: Text("You already have an account?".tr),
-                ).paddingOnly(bottom: 10),
-              ],
+                  ),
+
+                  TextButton(
+                    onPressed: () {
+                      Get.toNamed(Routes.LOGIN);
+                    },
+                    child: Text("You already have an account?".tr),
+                  ).paddingOnly(bottom: 10),
+                ],
+              ),
             ),
           ],
         ),

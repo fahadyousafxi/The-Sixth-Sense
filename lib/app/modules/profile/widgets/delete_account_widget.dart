@@ -1,7 +1,8 @@
 /*
  * File name: delete_account_widget.dart
- * Last modified: 2022.08.16 at 14:22:36
- * Author: SmarterVision - https://codecanyon.net/user/smartervision
+ * Last modified: 2022.12.12
+ * Author: Ditlou tsa Molongoana
+ * App Name: The sixth sense
  * Copyright (c) 2022
  */
 

@@ -1,7 +1,8 @@
 /*
  * File name: book_e_service_view.dart
- * Last modified: 2022.03.11 at 23:35:29
- * Author: SmarterVision - https://codecanyon.net/user/smartervision
+ * Last modified: 2022.12.12
+ * Author: Ditlou tsa Molongoana
+ * App Name: The sixth sense
  * Copyright (c) 2022
  */
 
@@ -355,7 +356,7 @@ class BookEServiceView extends GetView<BookEServiceController> {
                         });
                         controller.toggleAtSalon(value);
                       },
-                      title: Text("At Salon".tr, style: controller.getTextTheme(controller.atSalon.value)).paddingSymmetric(vertical: 20),
+                      title: Text("At Healer".tr, style: controller.getTextTheme(controller.atSalon.value)).paddingSymmetric(vertical: 20),
                     ),
                   ),
                 );
